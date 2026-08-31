@@ -1,0 +1,4 @@
+Scenario,Checkout Fee (USD),14-Mo VPS Cost (USD),Total Upfront Outlay (USD),Fee Refund on 1st Payout,Net Outlay After 1st Payout,Net Monthly Funded Income,Months to Full Payback
+Standard FTMO 10K (€155),170.0,224.0,394.0,170.0,190.4,17.6,10.8
+Discounted Promo FTMO 10K,99.0,224.0,323.0,99.0,190.4,17.6,10.8
+Custom User Checkout Sizing,150.0,224.0,374.0,150.0,190.4,17.6,10.8

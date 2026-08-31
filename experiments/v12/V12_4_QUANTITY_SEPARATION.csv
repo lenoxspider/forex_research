@@ -1,0 +1,5 @@
+Quantity,Data Source,Sample Size,Win Rate,Expectancy,MFE / MAE,Nature
+Quantity A: Historical Empirical,"MT5 Historical Bars (2022-2025, N=91 trades)",91 trades,53.8%,+0.353 R,2.14 R / 0.62 R,Empirical Past Ground Truth
+Quantity B: Historical Model / Monte Carlo,"10,000 Resampled Paths from Quantity A","10,000 synthetic evaluations",53.8% (sampled),+0.353 R (sampled),N/A (Path Simulation),Statistical Modeling of Tail Risk
+Quantity C: Forward Empirical,Live MT5 Post-Boundary (after 2026-08-31 09:12:36 UTC),0 completed trades,N/A,N/A,N/A,Genuine Live Forward Reality
+Quantity D: Forward Model Projection,Expected Strategy Distribution Parameters,~3.2 trades / month expected,~53.8% projected,~+0.353 R projected,~2.14 R / ~0.62 R projected,Ex-Ante Strategy Expectation
