@@ -1,0 +1,58 @@
+{
+  "contract_profile": {
+    "firm_name": "FTMO_10K_2_STEP_EVALUATION",
+    "account_tier_usd": 10000.0,
+    "server_timezone": "CE(S)T (UTC+2 / UTC+3)",
+    "daily_reset_time": "00:00 CE(S)T",
+    "vps_operating_cost_monthly_usd": 16.0,
+    "vps_operating_cost_annual_usd": 192.0,
+    "challenge_purchase_fee_usd": 170.0,
+    "profit_split_pct": 80.0,
+    "phase_1": {
+      "name": "FTMO_10K_CHALLENGE_STEP_1",
+      "starting_balance_usd": 10000.0,
+      "profit_target_pct": 10.0,
+      "profit_target_usd": 1000.0,
+      "daily_loss_limit_pct": 5.0,
+      "daily_loss_limit_usd": 500.0,
+      "max_loss_limit_pct": 10.0,
+      "max_loss_floor_usd": 9000.0,
+      "max_loss_mode": "STATIC_ON_INITIAL_CAPITAL",
+      "min_trading_days": 4,
+      "trading_period_days": null
+    },
+    "phase_2": {
+      "name": "FTMO_10K_VERIFICATION_STEP_2",
+      "starting_balance_usd": 10000.0,
+      "profit_target_pct": 5.0,
+      "profit_target_usd": 500.0,
+      "daily_loss_limit_pct": 5.0,
+      "daily_loss_limit_usd": 500.0,
+      "max_loss_limit_pct": 10.0,
+      "max_loss_floor_usd": 9000.0,
+      "max_loss_mode": "STATIC_ON_INITIAL_CAPITAL",
+      "min_trading_days": 4,
+      "trading_period_days": null
+    },
+    "funded_account": {
+      "name": "FTMO_10K_FUNDED_TRADER",
+      "starting_balance_usd": 10000.0,
+      "profit_target_pct": 0.0,
+      "daily_loss_limit_pct": 5.0,
+      "daily_loss_limit_usd": 500.0,
+      "max_loss_limit_pct": 10.0,
+      "max_loss_floor_usd": 9000.0,
+      "max_loss_mode": "STATIC_ON_INITIAL_CAPITAL",
+      "min_trading_days": 0,
+      "profit_split_pct": 80.0,
+      "payout_frequency": "BI_WEEKLY_OR_MONTHLY"
+    },
+    "rules": {
+      "floating_pnl_counted": true,
+      "commissions_and_swaps_included": true,
+      "weekend_holding": true,
+      "news_trading": true,
+      "ea_algorithmic_trading_allowed": true
+    }
+  }
+}
