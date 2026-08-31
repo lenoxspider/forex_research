@@ -1,0 +1,3 @@
+Pair,Discovery_Trades_A,Replication_Trades_B,Trades_Only_in_A,Trades_Only_in_B,Common_Trades,Exit_Mismatch_in_Common,Mean_R_Diff_in_Common,Discovery_E[R],Discovery_PF,Replication_E[R],Replication_PF
+EURUSD,51,154,4,107,47,7,0.25555583730946607,0.34576210952343495,1.79,-0.20216741292597953,0.68
+GBPUSD,40,164,10,134,30,3,0.3333333333086148,0.3618648899267777,1.68,-0.3453441636037286,0.51

@@ -1,0 +1,8 @@
+risk_level_pct,prob_challenge_pass_pct,prob_daily_loss_breach_pct,prob_max_dd_breach_pct,prob_ruin_pct,median_trades_to_pass,pct95_trades_to_pass,median_days_to_pass,pct95_days_to_pass,expected_max_dd_pct,prob_survive_30d_pct,prob_survive_60d_pct,prob_survive_90d_pct,expected_monthly_return_pct,monthly_return_volatility_pct,prob_monthly_loss_pct,max_observed_losing_streak,challenge_suitability,funded_suitability
+0.1,72.2,0.0,0.0,0.0,191,243,1313.1,1670.6,1.08,100.0,100.0,100.0,0.11,0.26,44.6,18,SUB-OPTIMAL (Slow Pass Time),"OPTIMAL (Ultra-High Survival, Low DD)"
+0.2,99.0,0.0,0.0,0.0,103,192,708.1,1320.0,1.75,100.0,100.0,100.0,0.22,0.53,44.0,16,"OPTIMAL (High Pass, Low DD Breach)","OPTIMAL (Ultra-High Survival, Low DD)"
+0.25,99.5,0.0,0.0,0.0,82,166,563.8,1141.2,2.04,100.0,100.0,100.0,0.27,0.66,44.2,17,"OPTIMAL (High Pass, Low DD Breach)","OPTIMAL (Ultra-High Survival, Low DD)"
+0.35,99.8,0.0,0.0,0.0,57,132,391.9,907.5,2.51,100.0,100.0,100.0,0.37,0.92,44.2,17,"OPTIMAL (High Pass, Low DD Breach)","OPTIMAL (Ultra-High Survival, Low DD)"
+0.5,99.8,0.0,0.2,0.2,39,102,268.1,701.2,3.09,100.0,100.0,100.0,0.52,1.32,44.3,14,"OPTIMAL (High Pass, Low DD Breach)","OPTIMAL (Ultra-High Survival, Low DD)"
+0.75,98.9,0.0,1.1,1.1,25,75,171.9,515.6,3.9,100.0,100.0,100.0,0.79,1.98,44.5,13,"OPTIMAL (High Pass, Low DD Breach)","OPTIMAL (Ultra-High Survival, Low DD)"
+1.0,96.8,0.0,3.2,3.2,17,60,116.9,412.5,4.45,100.0,100.0,99.8,1.04,2.65,44.7,13,"VIABLE (Moderate Pass, Controlled DD)","OPTIMAL (Ultra-High Survival, Low DD)"

@@ -1,0 +1,5 @@
+Pair,Model,Gross_E[R],Spread_Drag_R,Commission_Drag_R,Slippage_Drag_R,Total_Friction_R,Net_E[R],WinRate%,ProfitFactor
+EURUSD,"Discovery_V2 (Target 2.0R, Filtered N=51)",0.589,0.102,0.09,0.051,0.243,0.346,52.9,1.79
+EURUSD,"Replication_V3 (Target 1.0R, Unfiltered N=154)",0.067,0.115,0.097,0.056,0.268,-0.202,52.6,0.68
+GBPUSD,"Discovery_V2 (Target 2.0R, Filtered N=51)",0.647,0.13,0.073,0.083,0.285,0.362,55.0,1.68
+GBPUSD,"Replication_V3 (Target 1.0R, Unfiltered N=154)",-0.032,0.148,0.075,0.086,0.309,-0.345,47.6,0.51

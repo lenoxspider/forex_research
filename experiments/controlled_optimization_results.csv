@@ -1,0 +1,4 @@
+Pair,Candidate_Name,Parameters,TrainVal_Trades (2023-2025),TrainVal_WinRate%,TrainVal_Exp(R),TrainVal_PF,TrainVal_P(Exp>0)%,Cost_Stress_1.5x_PF,MonteCarlo_P95_DD%,OOS_2026_Trades,OOS_2026_WinRate%,OOS_2026_Exp(R),OOS_2026_PF,OOS_2026_P(Exp>0)%,OOS_2026_MaxDD%,Final_Status
+EURUSD,EURUSD_MS_BOS_BULL_REGIME,"{'atr_sl_mult': 1.5, 'rr_ratio': 1.8, 'max_holding_bars': 32}",454,37.89,-0.182,0.79,0.2,0.67,74.39,87,39.08,-0.177,0.77,10.4,25.89,REJECTED_FINAL_OOS
+GBPUSD,GBPUSD_TF_PB_HIGH_VOL,"{'atr_sl_mult': 1.4, 'rr_ratio': 1.8, 'max_holding_bars': 32}",79,35.44,-0.211,0.8,8.2,0.7,31.93,20,30.0,-0.317,0.8,12.4,9.75,REJECTED_FINAL_OOS
+USDJPY,USDJPY_VE_BO_EXPANSION,"{'atr_sl_mult': 1.2, 'rr_ratio': 2.0, 'max_holding_bars': 24}",158,43.67,0.124,1.21,84.8,1.08,25.08,28,25.0,-0.462,0.35,2.8,13.31,REJECTED_FINAL_OOS

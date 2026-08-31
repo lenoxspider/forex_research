@@ -1,0 +1,48 @@
+{
+  "candidate_id": "CAND_CANONICAL_RANGE_TO_TREND_TFPB_V1",
+  "strategy_family": "TrendFollowingPullback",
+  "symbols": [
+    "EURUSD",
+    "GBPUSD",
+    "USDJPY"
+  ],
+  "primary_timeframe": "M15",
+  "higher_timeframe": "H1",
+  "regime_transition_gate": {
+    "name": "RANGE_TO_TREND",
+    "adx_period": 14,
+    "adx_lag_bars": 10,
+    "adx_lag_threshold_max": 18.0,
+    "adx_current_threshold_min": 22.0,
+    "ema_stack_required": true
+  },
+  "h1_trend_filter": {
+    "bullish_h1_min": 0,
+    "bearish_h1_max": 0
+  },
+  "session_filter": {
+    "allowed_sessions": [
+      "LONDON",
+      "LONDON_NY_OVERLAP",
+      "NEW_YORK"
+    ],
+    "hours_utc": "07:00 to 21:00"
+  },
+  "entry_rule": {
+    "long": "low <= ema_20 and close >= ema_50 and close > open and lower_wick_ratio >= 0.25",
+    "short": "high >= ema_20 and close <= ema_50 and close < open and upper_wick_ratio >= 0.25",
+    "execution_bar": "Open of bar t+1 after Bar Close t confirmation"
+  },
+  "risk_management": {
+    "stop_loss_formula": "entry_price +/- (1.5 * ATR_14)",
+    "take_profit_target_r": 2.0,
+    "alternative_target_r": 1.0,
+    "max_holding_bars": 32
+  },
+  "cost_model": {
+    "commission_per_lot_usd": 7.0,
+    "slippage_pips": 0.2,
+    "spread_model": "Live dynamic M15 spread with broker base floor"
+  },
+  "r_definition": "R = (Net PnL in Pips) / (Initial Risk in Pips)"
+}

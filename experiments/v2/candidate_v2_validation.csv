@@ -1,0 +1,4 @@
+Candidate_ID,Pair,Strategy,Condition,Exit_Architecture,DevVal_Trades (2023-2025),DevVal_WinRate%,DevVal_Exp(R),DevVal_PF,Untouched_2026_Trades,Untouched_2026_WinRate%,Untouched_2026_Exp(R),Untouched_2026_PF,Status
+CAND_1_USDJPY_LDN_TIGHT_ASIAN_1R,USDJPY,LDN_MO,asian_range_category == TIGHT (<25p),B_Fixed_1.00R,39,56.41,-0.034,0.89,25,56.0,-0.03,0.79,REJECTED_OOS
+CAND_2_EURUSD_MS_BOS_RANGE_TO_TREND,EURUSD,MS_BOS,trend_transition == RANGE_TO_TREND,C_Fixed_1.25R,117,42.74,-0.217,0.69,24,45.83,-0.137,1.13,REJECTED_OOS
+CAND_3_GBPUSD_TF_PB_VOL_EXPANSION,GBPUSD,TF_PB,volatility_transition == COMPRESSION_TO_EXPANSION,B_Fixed_1.00R,10,60.0,0.023,1.19,1,0.0,-1.231,0.0,REJECTED_OOS

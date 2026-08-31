@@ -1,0 +1,45 @@
+{
+  "candidate_name": "RANGE_TO_TREND_TFPB_V1_PROD_FREEZE",
+  "version": "1.0.0-FROZEN",
+  "strategy_family": "TrendFollowingPullback",
+  "symbols": ["EURUSD", "GBPUSD", "USDJPY"],
+  "primary_timeframe": "M15",
+  "higher_timeframe": "H1",
+  "regime_transition": {
+    "name": "RANGE_TO_TREND",
+    "adx_period": 14,
+    "adx_lag_bars": 10,
+    "adx_lag_threshold_max": 18.0,
+    "adx_current_threshold_min": 22.0,
+    "ema_stack_required": true
+  },
+  "h1_trend_filter": {
+    "bullish_h1_state_min": 0,
+    "bearish_h1_state_max": 0
+  },
+  "session_filter": {
+    "allowed_hours_utc": [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+    "description": "London, London/NY Overlap, New York Afternoon (07:00 to 21:00 UTC)"
+  },
+  "entry_rules": {
+    "long": "low <= ema_20 and close >= ema_50 and close > open and lower_wick_ratio >= 0.25",
+    "short": "high >= ema_20 and close <= ema_50 and close < open and upper_wick_ratio >= 0.25",
+    "execution_bar": "Open of bar t+1 strictly after Bar Close t confirmation"
+  },
+  "risk_management": {
+    "stop_loss_atr_mult": 1.5,
+    "take_profit_target_r": 2.0,
+    "max_holding_bars": 32,
+    "risk_per_trade_pct": 1.0,
+    "initial_capital_usd": 100000.0
+  },
+  "cost_assumptions": {
+    "commission_per_lot_usd": 7.0,
+    "base_slippage_pips": 0.2,
+    "spread_model": "Live dynamic M15 bid-ask spread"
+  },
+  "safety_rules": {
+    "allow_live_order_send": false,
+    "mode": "PAPER_TRADING_VIRTUAL_SIMULATION_ONLY"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "challenge_phase_1": {
+    "account_name": "PROP_CHALLENGE_PHASE_1",
+    "initial_balance_usd": 100000.0,
+    "profit_target_pct": 8.0,
+    "daily_loss_limit_pct": 5.0,
+    "max_drawdown_pct": 10.0,
+    "drawdown_mode": "STATIC",
+    "min_trading_days": 4,
+    "max_trading_days": null,
+    "max_leverage": 100,
+    "max_correlated_risk_pct": 1.5,
+    "weekend_holding_allowed": false,
+    "news_trading_allowed": true,
+    "consistency_max_day_profit_share_pct": 50.0
+  },
+  "challenge_phase_2": {
+    "account_name": "PROP_CHALLENGE_PHASE_2",
+    "initial_balance_usd": 100000.0,
+    "profit_target_pct": 5.0,
+    "daily_loss_limit_pct": 5.0,
+    "max_drawdown_pct": 10.0,
+    "drawdown_mode": "STATIC",
+    "min_trading_days": 4,
+    "max_trading_days": null,
+    "max_leverage": 100,
+    "max_correlated_risk_pct": 1.5,
+    "weekend_holding_allowed": false,
+    "news_trading_allowed": true,
+    "consistency_max_day_profit_share_pct": 50.0
+  },
+  "funded_account": {
+    "account_name": "PROP_FUNDED_ACCOUNT",
+    "initial_balance_usd": 100000.0,
+    "profit_target_pct": null,
+    "daily_loss_limit_pct": 5.0,
+    "max_drawdown_pct": 10.0,
+    "drawdown_mode": "STATIC",
+    "min_trading_days": 0,
+    "max_leverage": 100,
+    "max_correlated_risk_pct": 1.0,
+    "weekend_holding_allowed": false,
+    "news_trading_allowed": true,
+    "safety_buffer_pct": 0.5
+  }
+}
