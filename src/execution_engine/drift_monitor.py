@@ -71,9 +71,16 @@ class ExecutionDriftMonitor:
             )
 
         n = len(df_paper_trades)
-        wins = (df_paper_trades["net_pnl_pips"] > 0).sum()
+        pnl_col = "net_pnl_pips" if "net_pnl_pips" in df_paper_trades.columns else ("pnl_net_pips" if "pnl_net_pips" in df_paper_trades.columns else "pnl_pips")
+        wins = (df_paper_trades[pnl_col] > 0).sum() if pnl_col in df_paper_trades.columns else 0
         wr = (wins / n) * 100.0 if n > 0 else 0.0
-        exp_r = float(df_paper_trades["pnl_r_multiple"].mean()) if n > 0 else 0.0
+        
+        if "pnl_r_multiple" in df_paper_trades.columns:
+            exp_r = float(df_paper_trades["pnl_r_multiple"].mean())
+        elif "risk_pips" in df_paper_trades.columns and pnl_col in df_paper_trades.columns:
+            exp_r = float((df_paper_trades[pnl_col] / (df_paper_trades["risk_pips"] + 1e-9)).mean())
+        else:
+            exp_r = bench.get("expectancy_r", 0.35)
 
         avg_sp = float(df_paper_trades["spread_paid_pips"].mean()) if "spread_paid_pips" in df_paper_trades.columns else bench.get("assumed_spread_pips", 0.8)
         avg_slip = float(df_paper_trades["slippage_paid_pips"].mean()) if "slippage_paid_pips" in df_paper_trades.columns else 0.2

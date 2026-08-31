@@ -1,0 +1,6 @@
+n_accounts,total_capital_managed_usd,vps_cost_monthly_total_usd,vps_cost_per_account_usd,gross_monthly_payout_usd,net_monthly_payout_after_vps_usd,net_annual_income_usd,net_annual_roi_pct,expected_max_drawdown_pct,max_simultaneous_open_positions,combined_correlated_usd_exposure_pct
+1,10000.0,16.0,16.0,33.6,17.6,211.2,2.11,2.0,2,0.5
+2,20000.0,16.0,8.0,67.2,51.2,614.4,3.07,2.0,4,1.0
+3,30000.0,16.0,5.33,100.8,84.8,1017.6,3.39,2.0,6,1.5
+5,50000.0,16.0,3.2,168.0,152.0,1824.0,3.65,2.0,10,2.5
+10,100000.0,16.0,1.6,336.0,320.0,3840.0,3.84,2.0,20,5.0
