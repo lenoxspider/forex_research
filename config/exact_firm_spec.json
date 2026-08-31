@@ -1,0 +1,39 @@
+{
+  "firm_profile": {
+    "firm_name": "FTMO_100K_STANDARD",
+    "account_tier": "100K_USD",
+    "starting_balance_usd": 100000.0,
+    "profit_target_pct": 8.0,
+    "profit_target_usd": 8000.0,
+    "daily_loss_limit_pct": 5.0,
+    "daily_loss_limit_usd": 5000.0,
+    "max_drawdown_limit_pct": 10.0,
+    "max_drawdown_limit_usd": 10000.0,
+    "drawdown_mode": "STATIC",
+    "drawdown_calculation_base": "STARTING_BALANCE",
+    "floating_pnl_counts": true,
+    "server_timezone": "UTC+2 / CE(S)T",
+    "minimum_trading_days": 4,
+    "maximum_trading_days": null,
+    "max_leverage": 100,
+    "max_position_size_lots": 50.0,
+    "news_restrictions": {
+      "restricted_minutes_before_high_impact": 2,
+      "restricted_minutes_after_high_impact": 2,
+      "holding_during_news_allowed": true
+    },
+    "overnight_holding_allowed": true,
+    "weekend_holding_allowed": false,
+    "weekend_close_deadline_utc": "Friday 19:50 UTC",
+    "consistency_rule": {
+      "max_single_day_profit_share_pct": 50.0,
+      "lot_size_consistency_band_pct": 100.0
+    },
+    "prohibited_strategies": [
+      "MARTINGALE",
+      "GRID_WITHOUT_STOPS",
+      "LATENCY_ARBITRAGE",
+      "ACCOUNT_SHARING"
+    ]
+  }
+}
